@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Selamat Ulang Tahun 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- PASSWORD GATE -->
+  <div id="gate" class="overlay">
+    <div class="card gateBox">
+      <h2>🔒 Masukkan Password</h2>
+      <input id="pw" type="password" placeholder="ketik password..." />
+      <button id="enterBtn">Masuk</button>
+      <p class="small">MasukkanPassword </code> </p>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <main id="app" class="container" style="display:none;">
+    <div class="topbar">
+      <h1>🎂 Happy Birthday, BITA! 💜</h1>
+      <div class="top-actions">
+        <button id="themeToggle" title="Toggle theme">🌙</button>
+        </button>
+      </div>
+    </div>
+
+    <section class="hero card">
+      <div class="left">
+        <div class="cake-wrap" id="cakeWrap">
+          <div class="cake">
+            <div class="candle"></div>
+            <div class="frost"></div>
+          </div>
+        </div>
+        <div class="greeting">
+          <h2>Untukmu, <span class="emoji">💖</span></h2>
+          <p class="lead">Semoga hari ini penuh tawa, cinta, dan kue manis 🍰</p>
+          <button id="openLetterBtn" class="btn">Buka Surat 💌</button>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="slider card" id="slider">
+          <!-- Foto akan dirender dari JS -->
+        </div>
+
+        <div class="uploadRow">
+          <input id="fileInput" type="file" accept="image/*" hidden multiple>
+          </button>
+          </button>
+        </div>
+
+        <div class="controlsSmall">
+          <button id="prevBtn">◀</button>
+          <button id="nextBtn">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- envelope letter -->
+    <div id="letterModal" class="modal" aria-hidden="true">
+      <div class="envelope">
+        <div class="front" id="envFront">
+          <div class="seal">💌</div>
+        </div>
+        <div class="paper" id="letterPaper">
+          <h3>Untukmu</h3>
+          <p id="letterText">Selamat Ulang Tahun Bitaaa kesayangan kuuu💗 Semoga panjang umur, sehat selalu, menjadi wanita yang rendah hati, dan semoga kita tetap selalu bareng-bareng 💓</p>
+          <button id="closeLetter" class="btn">Tutup ✖</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    
+
+    <!-- love explode button -->
+    <div class="loveWrap">
+      <button id="loveBtn" class="loveBtn">LOVE ❤</button>
+    
+    <footer class="small muted">Dibuat dengan ❤ khusus untuk BITA</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
