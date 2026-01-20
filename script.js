@@ -1,6 +1,7 @@
 /* ================= CONFIG ================= */
 const PASSWORD = "bitaa";
 
+
 /* ================= DOM ================= */
 const gate = document.getElementById('gate');
 const enterBtn = document.getElementById('enterBtn');
