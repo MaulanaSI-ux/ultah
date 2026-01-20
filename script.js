@@ -1,5 +1,5 @@
 /* ================= CONFIG ================= */
-const PASSWORD = "sayangku";
+const PASSWORD = "bitaa";
 
 /* ================= DOM ================= */
 const gate = document.getElementById('gate');
